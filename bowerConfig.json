@@ -13,17 +13,17 @@
         "git": {
             "enabled": true,
             "cacheDirectory": "/data/gitRepoCache",
-            "host": "localhost",
+            "host": "0.0.0.0",
             "port": 6789,
-            "publicAccessURL" : null,
+            "publicAccessURL" : "<address>:6789",
             "refreshTimeout": 10
         },
         "svn": {
             "enabled": true,
             "cacheDirectory": "/data/svnRepoCache",
-            "host": "localhost",
+            "host": "0.0.0.0",
             "port": 7891,
-            "publicAccessURL" : null,
+            "publicAccessURL" : "<address>:7891",
             "refreshTimeout": 10
         }
     },

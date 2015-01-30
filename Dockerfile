@@ -12,5 +12,6 @@ VOLUME /data
 WORKDIR /home/private-bower
 
 ADD ./bowerConfig.json /home/private-bower/bowerConfig.json
+ADD ./launch.sh /home/private-bower/launch.sh
 
-ENTRYPOINT private-bower --config /home/private-bower/bowerConfig.json
+CMD ./launch.sh
