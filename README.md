@@ -2,7 +2,7 @@
 
 This docker image sets up a private bower registry which caches third party packages.
 
-All data is stored in the `/data` volume which should .
+All data is stored in the `/data` volume which should be mounted somewhere persistent.
 
 The docker image need to know which IP/hostname it can be reached on. This is done by specifying the `ADDRESS` environment variable at launch.
 
