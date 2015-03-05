@@ -11,7 +11,7 @@ The docker image need to know which IP/hostname it can be reached on. This is do
     docker run -e ADDRESS=my-bower-registry \
                -v /somewhere/to/store/stuff:/data \
                -p 5678:5678 -p 6789:6789 -p 7891:7891 \
-               private-bower
+               tandrup/private-bower
 
 ## Usage
 
