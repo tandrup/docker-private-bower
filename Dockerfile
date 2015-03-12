@@ -14,4 +14,7 @@ WORKDIR /home/private-bower
 ADD ./bowerConfig.json /home/private-bower/bowerConfig.json
 ADD ./launch.sh /home/private-bower/launch.sh
 
+# Work around company firewalls blocking the git protocol
+RUN git config --global url."https://github.com/".insteadOf "git://github.com/"
+
 CMD ./launch.sh
