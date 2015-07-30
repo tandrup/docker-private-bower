@@ -17,4 +17,7 @@ ADD ./launch.sh /home/private-bower/launch.sh
 # Work around company firewalls blocking the git protocol
 RUN git config --global url."https://github.com/".insteadOf "git://github.com/"
 
+RUN git config --global user.email "private-bower@example.org"
+RUN git config --global user.name "Private Bower"
+
 CMD ./launch.sh
