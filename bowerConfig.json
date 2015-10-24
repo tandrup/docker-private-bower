@@ -4,7 +4,7 @@
     "timeout": 144000,
     "public": {
         "disabled": false,
-        "registry": "http://bower.herokuapp.com/packages",
+        "registry": "https://bower.herokuapp.com/packages",
         "registryFile": "/data/bowerRepositoryPublic.json",
         "whitelist": [],
         "blacklist": []
