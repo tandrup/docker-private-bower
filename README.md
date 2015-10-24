@@ -21,3 +21,6 @@ In your client project add the registry to your `.bowerrc` file:
         "registry": "http://my-bower-registry:5678"
     }
 
+## Customizing private-bower config
+
+In case you like to tweak the configuration make sure the configuration is mounted as `/data/bowerConfig.json`. If the file exists it will be used instead of the default configuration.
