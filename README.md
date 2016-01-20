@@ -23,4 +23,7 @@ In your client project add the registry to your `.bowerrc` file:
 
 ## Customizing private-bower config
 
-In case you like to tweak the configuration make sure the configuration is mounted as `/data/bowerConfig.json`. If the file exists it will be used instead of the default configuration.
+In case you like to tweak the configuration make sure the configuration is mounted as `/data/bowerConfig.json`. If the file exists it will be used instead of the default configuration. 
+
+## Providing ssh keys
+To provide ssh keys for use with the docker container copy or symlink the keys you wish to use into the `ssh` folder and these will be used, allowing access to private repos for which you have access.
