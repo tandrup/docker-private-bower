@@ -12,9 +12,12 @@ VOLUME /data
 WORKDIR /home/private-bower
 
 ADD ./bowerConfig.json /home/private-bower/bowerConfig.json
-ADD ./launch.sh /home/private-bower/launch.sh
-ADD ./ssh/ /root/.ssh
 
+ADD ./launch.sh /home/private-bower/launch.sh
+RUN chmod +x /home/private-bower/launch.sh
+
+ADD ./ssh/ /root/.ssh
+RUN chmod 600 /root/.ssh/*
 
 # Work around company firewalls blocking the git protocol
 RUN git config --global url."https://github.com/".insteadOf "git://github.com/"
