@@ -1,8 +1,8 @@
-FROM node:4.2
+FROM node:9.3
 
-MAINTAINER Mads M. Tandrup <mads@maetzke-tandrup.dk>
+MAINTAINER Martin Oswald <martinoswald@bmape.me>
 
-RUN npm install -g private-bower@1.1.7 && npm cache clear
+RUN npm install -g private-bower@1.1.9 && npm cache clear
 
 # Bower registry, git cache and svn cache ports
 EXPOSE 5678 6789 7891
@@ -12,6 +12,7 @@ VOLUME /data
 WORKDIR /home/private-bower
 
 ADD ./bowerConfig.json /home/private-bower/bowerConfig.json
+ADD ./log4js.conf.json /home/private-bower/log4js.conf.json
 
 ADD ./launch.sh /home/private-bower/launch.sh
 RUN chmod +x /home/private-bower/launch.sh
