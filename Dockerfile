@@ -1,6 +1,6 @@
 FROM node:9.3
 
-MAINTAINER Martin Oswald <martinoswald@bmape.me>
+MAINTAINER Mads M. Tandrup <mads@maetzke-tandrup.dk>
 
 RUN npm install -g private-bower@1.1.9 && npm cache clear
 
