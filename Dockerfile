@@ -2,7 +2,7 @@ FROM node:9.3
 
 MAINTAINER Mads M. Tandrup <mads@maetzke-tandrup.dk>
 
-RUN npm install -g private-bower@1.1.9 && npm cache clear
+RUN npm install -g private-bower@1.1.9 && npm cache clear --force
 
 # Bower registry, git cache and svn cache ports
 EXPOSE 5678 6789 7891
